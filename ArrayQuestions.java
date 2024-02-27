@@ -3,16 +3,15 @@ import java.util.Scanner;
 public class ArrayQuestions{
   public static void main(String[] args){
       // reverseArray();
-      // rotateArrayRightByK();
-      // rotateRightOptimal();
-      rotateLeftOptimal();
+      rotateRightOptimalByK();
+      // rotateLeftOptimalByK();
   }
   public static void reverseArray(){
     Scanner sc = new Scanner(System.in);
     System.out.print("Enter size of array :");
     int n = sc.nextInt();
     int arr[] = new int[n];
-    System.out.print("Enter the array values: ");
+    System.out.print("Enter the array values :");
     for(int i = 0;i<arr.length;i++){
       arr[i]=sc.nextInt();
     }
@@ -39,39 +38,10 @@ public class ArrayQuestions{
     }
     System.out.println();
   }
-  // brute force 
-  public static void rotateArrayRightByK() {
-    Scanner sc = new Scanner(System.in);
-    System.out.println("Enter size of array: ");
-    int n = sc.nextInt();
-    int arr[] = new int[n];
-    System.out.println("Enter array values: ");
-    for (int i = 0; i < arr.length; i++) {
-        arr[i] = sc.nextInt();
-    }
-    System.out.println("Enter the value of k: ");
-    int k = sc.nextInt();
-    k = k % n;
-    sc.close();
-    System.out.print("Initial array: ");
-    for (int i = 0; i < arr.length; i++) {
-        System.out.print(arr[i] + " ");
-    }
-    for (int i = 1; i <= k; i++) {
-        int temp = arr[arr.length - 1];
-        for (int j = n - 1; j >= 1; j--) {
-            arr[j] = arr[j - 1];
-        }
-        arr[0] = temp;
-    }
-    System.out.print("\nRotated array: ");
-    for (int i = 0; i < arr.length; i++) {
-        System.out.print(arr[i] + " ");
-    }
-  }
+
   // optimal method
   // rotate right array by k 
-  public static void rotateRightOptimal(){
+  public static void rotateRightOptimalByK(){
     Scanner sc = new Scanner(System.in);
     System.out.print("Enter the of the array :");
     int n = sc.nextInt();
@@ -91,7 +61,7 @@ public class ArrayQuestions{
     reverse(arr,0,arr.length-k-1);
     reverse(arr,k+1,arr.length-1);
     reverse(arr,0,arr.length-1);
-    System.out.print("Rotated array:");
+    System.out.print("\nRotated array:");
     for(int i = 0;i<arr.length;i++){
       System.out.print(arr[i]+" ");
     }
@@ -108,7 +78,7 @@ public class ArrayQuestions{
 
   // optimal method
   // rotate left array by k 
-  public static void rotateLeftOptimal(){
+  public static void rotateLeftOptimalByK(){
     Scanner sc = new Scanner(System.in);
     System.out.print("Enter the of the array :");
     int n = sc.nextInt();
