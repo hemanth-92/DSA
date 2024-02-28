@@ -1,8 +1,7 @@
-
-
+package algorithms;
 import java.util.Scanner;
 
-public class kadanes {
+public class Kadanes {
   public static int kadanesAlgorithm(int[] arr) {
     int currSum = 0;
     int maxSum = Integer.MIN_VALUE;
