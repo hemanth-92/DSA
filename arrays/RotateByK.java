@@ -2,16 +2,16 @@ package arrays;
 
 import java.util.Scanner;
 
-public class ReverseByK {
+public class RotateByK {
   public static void main(String[] args) {
-    rotateRightOptimalByK();
-    // rotateLeftOptimalByK();
+    // rotateRightOptimalByK();
+    rotateLeftOptimalByK();
   }
   // optimal method
   // rotate right array by k 
   public static void rotateRightOptimalByK(){
     Scanner sc = new Scanner(System.in);
-    System.out.print("Enter the of the array :");
+    System.out.print("Enter the size of the array :");
     int n = sc.nextInt();
     int arr[] = new int[n];
     System.out.print("Enter the values in array :");
@@ -26,9 +26,9 @@ public class ReverseByK {
     for(int i = 0;i<arr.length;i++){
       System.out.print(arr[i]+" ");
     }
-    reverse(arr,0,arr.length-k-1);
-    reverse(arr,k+1,arr.length-1);
-    reverse(arr,0,arr.length-1);
+    reverse(arr, 0, arr.length - k - 1);
+    reverse(arr, k + 1, arr.length - 1);
+    reverse(arr, 0, arr.length - 1);
     System.out.print("\nRotated array:");
     for (int i = 0; i < arr.length; i++) {
         System.out.print(arr[i]+" ");
