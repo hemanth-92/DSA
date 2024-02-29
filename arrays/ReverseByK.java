@@ -63,9 +63,9 @@ public class ReverseByK {
     for(int i = 0;i<arr.length;i++){
       System.out.print(arr[i]+" ");
     }
-    reverse(arr,0,arr.length-k-1);
-    reverse(arr,k+1,arr.length-1);
-    reverse(arr,0,arr.length-1);
+    reverse(arr, 0, k - 1);
+    reverse(arr, k, arr.length - 1);
+    reverse(arr, 0, arr.length - 1);
     System.out.print("\nRotated array:");
     for(int i = 0;i<arr.length;i++){
       System.out.print(arr[i]+" ");
