@@ -1,4 +1,4 @@
-package NumberCrunching;
+package numbercrunching;
 
 public class HappyNumber {
 public static void main(String[] args){

@@ -1,4 +1,4 @@
-package NumberCrunching;
+package numbercrunching;
 
 import java.util.Scanner;
 
