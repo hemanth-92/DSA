@@ -3,7 +3,7 @@ package algorithms;
 import java.util.Scanner;
 
 class DuthNational {
-public static void main(String[] args) {
+  public static void main(String[] args) {
     dutchNationalAlgorithm();
 }  
 public static void dutchNationalAlgorithm() {
