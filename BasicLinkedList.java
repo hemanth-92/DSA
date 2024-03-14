@@ -15,8 +15,8 @@ public class BasicLinkedList {
   public static void main(String[] args) {
       // insertion:
 
-      // insertAtHead(10);
-      // printLL();
+    //   insertAtHead(30);
+    //   printLL();
       // insertAtTail(100);
       // printLL();
       // insertAtPos(20, 2);
